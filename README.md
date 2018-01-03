@@ -6,6 +6,16 @@
 
 이진 파일을 헥스 에디터에서 보는것과 같이 뷰잉할 수 있는 텍스트 형태로 변환합니다.
 
+사용방법
+
+    python printBinary.py -f [filename] > save.txt
+
+제공옵션
+
+    -f : input file path
+    -n : show number line
+    -m : limit file size(bytes) 
+
 # cutFile.py
 
 파일의 특정 영역을 잘라내어 별도 다른 파일로 추출합니다.
