@@ -10,4 +10,7 @@ def md5sum(filename, blocksize=65536):
     return hash.hexdigest()
 
 if __name__ == "__main__" :
-    print md5sum(sys.argv[1])
+    if len(sys.argv) is 2 :
+        print md5sum(sys.argv[1])
+    else :
+        print "Usage : python md5file.py [filepath]"
