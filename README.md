@@ -19,3 +19,15 @@
 # cutFile.py
 
 파일의 특정 영역을 잘라내어 별도 다른 파일로 추출합니다.
+
+
+# md5file.py
+
+파일의 내용을 기준으로 md5 hash를 출력합니다.
+
+사용방법
+
+   python md5file.py [filename]
+   
+   
+   
