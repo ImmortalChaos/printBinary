@@ -27,7 +27,7 @@
 
 사용방법
 
-   python md5file.py [filename]
+    python md5file.py [filename]
    
    
    
