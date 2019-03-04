@@ -1,4 +1,4 @@
-﻿import os
+﻿#-*-encoding=utf-8-*-
 import array
 import getopt
 import sys
