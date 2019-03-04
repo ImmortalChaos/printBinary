@@ -1,5 +1,4 @@
 ﻿#-*-encoding=utf-8-*-
-import array
 import getopt
 import sys
 
@@ -11,13 +10,11 @@ def usage() :
    print
    print "Option : "
    print "   -f : input file path"
-   print "   -o : output file path"   
+   print "   -o : output file path"
    print "   -n : cut file size(bytes)"
    print "   -s : file start offset"
     
 def main_run(filename, outfile, startOffset, sizeLimit) :
-   line = ''
-
    f = open(filename, 'rb')
    fo = open(outfile, 'wb')
    cnt = 0
@@ -43,7 +40,7 @@ if __name__ == "__main__":
    sizeLimit = 0
    numline = False
    try:
-       optlist, list = getopt.getopt(sys.argv[1:],'f:o:n:s:')
+       optlist, lists = getopt.getopt(sys.argv[1:],'f:o:n:s:')
        if len(optlist) == 0 :
            usage()
            bRun = False
@@ -62,7 +59,7 @@ if __name__ == "__main__":
    except getopt.GetoptError:
        usage()
        bRun = False
-   
+
    if bRun :
        if filename!="":
            main_run(filename, destFilename, startOffset, sizeLimit)
